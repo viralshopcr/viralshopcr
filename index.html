@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViralShop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5deb3; /* Cremita más intenso */
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .productos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      width: 270px;
+      padding: 15px;
+      text-align: center;
+    }
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .imagenes img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .precio .antes {
+      text-decoration: line-through;
+      color: #999;
+      margin-right: 8px;
+    }
+    .precio .ahora {
+      color: #e63946;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .card p {
+      margin: 5px 0;
+      color: #444;
+    }
+    .card button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .card button:hover {
+      background: #444;
+    }
+    .info {
+      padding: 30px;
+      text-align: center;
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="ViralShop Logo">
+    <h1>ViralShop</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#info">Cómo Comprar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Bienvenido a ViralShop</h2>
+    <p>Tu tienda de productos de cuidado personal con entrega rápida y segura.</p>
+  </section>
+
+  <section class="productos" id="productos">
+    <!-- Producto Vintage T9 -->
+    <div class="card">
+      <div class="imagenes">
+        <img src="t9-1.jpg" alt="Rasuradora Vintage T9 foto 1">
+        <img src="t9-2.jpg" alt="Rasuradora Vintage T9 foto 2">
+      </div>
+      <h3>Rasuradora Vintage T9</h3>
+      <p class="precio">
+        <span class="antes">₡7,999</span>
+        <span class="ahora">₡6,450</span>
+      </p>
+      <p><strong>Envío GRATIS dentro del GAM</strong></p>
+      <p>Fuera del GAM: ₡1000</p>
+      <button onclick="window.open('https://wa.me/50663226364?text=Hola%20quiero%20pedir%20la%20Rasuradora%20Vintage%20T9','_blank')">Pedir por WhatsApp</button>
+    </div>
+
+    <!-- Producto Tiras 9D White -->
+    <div class="card">
+      <div class="imagenes">
+        <img src="tiras-1.jpg" alt="Tiras Blanqueadoras 9D White foto 1">
+        <img src="tiras-2.jpg" alt="Tiras Blanqueadoras 9D White foto 2">
+      </div>
+      <h3>Tiras Blanqueadoras 9D White</h3>
+      <p>Blanquea tus dientes con nuestras tiras blanqueadoras 9D white.</p>
+      <p class="precio">
+        <span class="antes">₡8,990</span>
+        <span class="ahora">₡6,450</span>
+      </p>
+      <p><strong>Envío GRATIS dentro del GAM</strong></p>
+      <p>Fuera del GAM: ₡1000</p>
+      <button onclick="window.open('https://wa.me/50663226364?text=Hola%20quiero%20pedir%20las%20Tiras%20Blanqueadoras%209D%20White','_blank')">Pedir por WhatsApp</button>
+    </div>
+  </section>
+
+  <section class="info" id="info">
+    <h2>Cómo Comprar</h2>
+    <p>En ViralShop compras fácil y seguro: elegís el producto, nos contactás y <strong>pagás contra entrega</strong>.</p>
+    <p>Te lo llevamos hasta la puerta de tu casa.</p>
+  </section>
+
+  <footer id="contacto">
+    <p>Síguenos en nuestras redes</p>
+    <div class="social">
+      <a href="https://www.instagram.com/viralshopcr_" target="_blank">Instagram</a>
+      <a href="https://wa.me/50663226364" target="_blank">WhatsApp</a>
+    </div>
+    <p>&copy; 2025 ViralShop</p>
+  </footer>
+
+</body>
+</html>
